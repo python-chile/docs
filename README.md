@@ -1,6 +1,7 @@
 # Python Chile Docs
 
-Documentos, textos, y material relacionado de la comunidad.
+Documentos y material relacionado de la comunidad.
 
-* [Normativas Telegram](normativa-telegram.md)
-* [Normativas Slack](#) *en progreso*
+* [Normativa Telegram](normativa-telegram.md)
+* [Normativa Facebook](normativa-facebook.md)
+* [Normativa trabajo Github](normativa-trabajo-github.md)
