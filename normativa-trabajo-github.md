@@ -93,6 +93,7 @@
 1. Ve al repositorio en GitHub.
 2. Crea un Pull Request (PR) desde tu rama hacia la rama principal (`main`).
 3. Describe los cambios realizados en el PR.
+4. Asigna la revisión a miembros antiguos de la comunidad
 
 ## 10. Proceso de Revisión
 
