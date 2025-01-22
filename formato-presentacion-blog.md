@@ -7,7 +7,7 @@
   - Formato: **jpg**, **jpeg** o **png**.
 - Guarda la imagen con el siguiente nombre:  
      **coordinacion_nombre_apellido.extensión**  
-     (Reemplaza "nombre" y "apellido" con los correspondientes, y "extensión" con el formato de la imagen).  
+     (Un ejemplo de como debería quedar guardada la imagen sería **coordinacion_carlos_carrasco.jpg**).  
 - Ubica la imagen en la siguiente carpeta dentro del proyecto:  
      **content/images/**
 
@@ -44,7 +44,7 @@ layout: post
 title: Presentación de [Tu Nombre] 🎉
 subtitle: Presentación nuevo integrante de coordinación
 author: Python Chile
-image: coordinacion_nombre_apellido.jpg #extensión jpg,jpeg, png, medida 330x330 px
+image: coordinacion_nombre_apellido.jpg
 tags: coordinación, presentación, pythonchile2025
 category: presentación
 ---
