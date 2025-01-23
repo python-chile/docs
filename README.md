@@ -1,6 +1,6 @@
 # Python Chile Docs
 
-Documentos y material relacionado de la comunidad.
+Documentos y formatos relacionados con la comunidad.
 
 ## Normativa comunidad
 
@@ -12,3 +12,7 @@ Documentos y material relacionado de la comunidad.
 ## Obligaciones y deberes eventos
 
 * [Obligaciones y deberes Pyday](obligaciones-y-deberes-pyday.md)
+
+## Formatos
+
+* [Formato presentación nuevos integrantes](formato-presentacion-blog.md)
