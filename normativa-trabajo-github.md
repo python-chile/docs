@@ -119,7 +119,7 @@
 4. Asigna la revisión al menos a los siguientes usuarios Aldo Caneo @ancaneo, Tony Rodriguez @Tony-Rome, Pablo Lira @pablolirag y Carlos Carrasco @krlitosforever .
 
 
-## 10. Proceso de Revisión
+## 10. Proceso de Revisión Pull Request (PR)
 
 Según la importancia de avanzar con los cambios, se contemplan dos casos:
 
@@ -136,7 +136,7 @@ Cualquier PR por defecto entra en esta categoría.
 Caso particular para PR que deben ser completadas lo antes posible.
 
 1. Esperar revisión de al menos 1 integrante del equipo de desarrollo.
-2. Opcionalmente resolver/responder comentarios realizados en PR. Todo comentario **no resuelto/respondido** se pospone una próxima PR.
+2. Opcionalmente resolver/responder comentarios realizados en PR. Todo comentario **no resuelto/respondido** se pospone para una próxima PR.
 3. Solamente quién **crea** PR o **aprueba** PR puede realizar **merge**.
 4. Notificar en canal de discord **equipo-desarrollo**  con tag **@desarrollo** más enlace de la PR urgente. Issue relacionada a dicha PR debe contener **label urgent**.
 5. En caso extremo por temas de tiempo o por falta de revisión, sugerir reunión con integrantes de desarrollo. 
