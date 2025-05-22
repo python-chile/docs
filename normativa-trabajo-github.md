@@ -3,10 +3,15 @@
 
 ## 1. Crear un Issue
 
-1. **Crear un nuevo Issue**:
-   - Ve a la pestaña "Issues" y selecciona "New Issue".
-   - Describe el problema o tarea de manera detallada.
-   - Etiqueta el Issue según corresponda (e.g., bug, feature, enhancement).
+1. Ir a pestaña **Issues** y seleccionar **New Issue**.
+2. Opcionalmente describir problema o tarea. Se recomienda añadir mínimo una breve descripción.
+3. Agregar a Issue **Labels**, **Type**, **Projects (más status)** según corresponda.
+4. **Importante** en caso de ser un Issue que tiene prioridad por sobre otras, se debe agregar en **Labels** el tag **Urgent**.
+
+> [!NOTE]  
+> - Labels: Corresponde a la(s) categoría(s) general  
+> - Type: Representa qué tipo de tarea es, según la(s) categoría(s).
+> - Projects: Por defecto se debe agregar a **Calendario Anual** de Python Chile.
 
 ## 2. Revisar el Issue
 
@@ -65,18 +70,22 @@
 
 ## 6. Crear una Rama
 
-1. Crea una rama basada en la tarea del Issue un ejemplo sería __pch-<tipo>-<numero de issue>-<título cambio>__:
+1. Crea una rama con la siguiente nomenclatura ``<tipo>-<número issue>-<título cambio>``. Ejemplo ``fix-108-texto-justificado``.
+2. Explicación de la nomenclatura:
+   1. **tipo**: Define si la rama es para cambios menores, mayores o corregir algún bug.
+   2. **número issue**: Corresponde al número del issue precedido por caracter **#**. El issue debe estar creado para avanzar con PR.
+   3. **título cambio**: Breve título que englobe los cambios contenidos en la rama.
 
-   ```bash
-   git checkout -b pch-<tipo>-<numero issue>-<titulo cambio>
+3. Tabla con opciones para ``tipo``:
 
-   #ejemplo
-   git checkout -b pch-fix-108-texto-justificado
-   ```
-> [!NOTE]  
-> Esta nomenclatura pch-[tipo]-[numero issue]-[titulo cambio] corresponde a la abreviatura de Python Chile (pch). El tipo corresponde a si es un fix o change. El número de issue corresponde al correlativo que entrega github (imagen de ejemplo al final). Y en la parte final se agrega un texto descriptivo a la modificación realizada.
-> 
-> ![image](https://github.com/user-attachments/assets/620571f3-3e7f-4e77-bafa-ec77c89ba4c5)
+|  Tipo   |             Definición             |
+|:-------:|:----------------------------------:|
+| change  | Modificaciones de código existente |
+| feature |        Funcionalidad nueva         |
+|   fix   |         Corrección de bug          |
+
+4. Ejemplo de número de Issue para **número issue**:
+![image](https://github.com/user-attachments/assets/620571f3-3e7f-4e77-bafa-ec77c89ba4c5)
 
 ## 7. Realizar las Modificaciones
 
@@ -110,13 +119,33 @@
 4. Asigna la revisión al menos a los siguientes usuarios Aldo Caneo @ancaneo, Tony Rodriguez @Tony-Rome, Pablo Lira @pablolirag y Carlos Carrasco @krlitosforever .
 
 
-## 10. Proceso de Revisión
+## 10. Proceso de Revisión Pull Request (PR)
 
-1. Espera la revisión de al menos otros 2 miembros del equipo.
-2. Realiza las modificaciones necesarias según los comentarios realizados en la _pull request_.
-3. Con dos revisiones aprobadas se puede hacer _merge_ 24 horas después.
-4. La responsabilidad de realizar el _merge_ es de quien creó el _pull request_.
+Según la importancia de avanzar con los cambios, se contemplan dos casos:
 
-## 11. No dudes solicitar ayuda en caso de necesitarla
+### Revisión Estándar
+Cualquier PR por defecto entra en esta categoría.
+
+1. Esperar revisión de al menos 2 integrantes del equipo de desarrollo.
+2. Resolver/responder comentarios realizados en PR. Opcionalmente quién crea comentarios debe dar **resolve**.
+   - **Aclaración: Resolver significa analisar comentarios según su viabilidad.**
+3. Cumpliendo **punto 1** y **punto 2**, se debe esperar 24 hrs para hacer merge. Quién crea PR debe realizar **merge**.
+4. Cumpliendo **punto 3**, se debe esperar 24 hrs para que cualquier integrante del equipo de desarrollo pueda realizar **merge**.
+
+### Revisión Urgente
+Caso particular para PR que deben ser completadas lo antes posible.
+
+1. Esperar revisión de al menos 1 integrante del equipo de desarrollo.
+2. Opcionalmente resolver/responder comentarios realizados en PR. Todo comentario **no resuelto/respondido** se pospone para una próxima PR.
+3. Solamente quién **crea** PR o **aprueba** PR puede realizar **merge**.
+4. Notificar en canal de discord **equipo-desarrollo**  con tag **@desarrollo** más enlace de la PR urgente. Issue relacionada a dicha PR debe contener **label urgent**.
+5. En caso extremo por temas de tiempo o por falta de revisión, sugerir reunión con integrantes de desarrollo. 
+
+## 11. Eliminación de rama post PR
+
+1. Toda rama que sea de tipo **change** o **fix** se debe eliminar una vez se realiza **merge** en la respectiva PR.
+2. Rama de tipo **feature** _no se debe eliminar de inmediato_, se debe esperar **30 días** para que dueño/a deba eliminar dicha rama.
+
+## 12. No dudes solicitar ayuda en caso de necesitarla
 
 Esperamos que este proceso sea lo más fácil posible; sin embargo, si tienes algunda duda o presentas problemas, no dudes en preguntar a algún miembro de la comunidad. Estaremos felices de poder ayudar.
